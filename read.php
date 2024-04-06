@@ -13,7 +13,7 @@
 <tr>
 <th>お名前</th>
 <th>Email</th>
-<th>自己紹介</th>
+<th>コメント</th>
 </tr>
 
 <?php
@@ -31,12 +31,12 @@ if ($file) {
         $data = explode(",", $line);
         // テーブルの行を開始
         echo "<tr>";
+        // var_dump($data);
         // 各データを表のセルに表示
         echo "<td>" . $data[0] . "</td>";
         echo "<td>" . $data[1] . "</td>";
         echo "<td>" . $data[2] . "</td>";
-        echo "<td>" . $data[3] . "</td>";
-        
+
         // テーブルの行を終了
         echo "</tr>";
     }
